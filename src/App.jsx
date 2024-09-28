@@ -62,6 +62,13 @@ function App() {
           </div>
         </div>
         {/*  */}
+        <h1 className="text-white  text-center mt-2 text-3xl	">
+          Work From Home
+        </h1>
+        <p className="text-white  text-center mt-2 text-3xl">
+          {" "}
+          [Part Time & Full Time]
+        </p>
         <p className="text-white font-serif font-bold text-center mt-2 text-xl	">
           A Govt. Approved work where you can Earn upto <b>30k</b> Per Month
           through Social Media (Facebook, Instagram, Whatsapp, linkedin)
@@ -71,12 +78,14 @@ function App() {
           Social Media (Facebook, Instagram, Whatsapp, linkedin)
         </p>
         {/*  */}
-        <h1 className="text-white  text-center mt-2 text-3xl	">
-          Work From Home
-        </h1>
         <p className="text-white  font-bold text-center mt-2 text-2xl	">
-          [Part Time & Full Time]
-          <p className="mt-3 text-2xl max-sm:text-base"> Today's Investment is Only <span className="text-yellow-400">₹99</span>  but Price will Increase to  <span className="text-yellow-400">₹999</span>  when Timer Hits Zero</p>
+          <p className="mt-3 text-2xl max-sm:text-base">
+            {" "}
+            Today's Investment is Only{" "}
+            <span className="text-yellow-400">₹99</span> but Price will Increase
+            to <span className="text-yellow-400">₹999</span> when Timer Hits
+            Zero
+          </p>
           <div className="main_container px-5 flex  flex-col  justify-center">
             <div className="flex gap-2 items-center  justify-center">
               <p> Time left</p>
@@ -97,31 +106,29 @@ function App() {
         {/*  */}
 
         <div className="mt-10">
-        <div className="w-[900px] mx-auto max-sm:w-full ">
-          <img
-            src={banner3}
-            alt="banner3"
-            className="  max-sm:h-[300px]  w-full  h-[500px]"
-          />
-        </div>
-         
+          <div className="w-[900px] mx-auto max-sm:w-full ">
+            <img
+              src={banner3}
+              alt="banner3"
+              className="  max-sm:h-[300px]  w-full  h-[500px]"
+            />
+          </div>
         </div>
         <div className="main_container px-5 flex   justify-center gap-3 mt-5 flex-wrap">
           {/*  */}{" "}
         </div>
         <div className="main_text mt-5 mb-10">
-        
           <p className=" text-2xl font-semibold mt-5 text-yellow-400">
             The Power of Online Business For Social Media Platforms :-
           </p>
           {/*  */}
           <div className="mt-10">
-        <img
-            src={banner2}
-            alt="banner2"
-            className=" h-screen border-4 max-sm:h-[300px]  w-full"
-          />
-        </div>
+            <img
+              src={banner2}
+              alt="banner2"
+              className=" h-screen border-4 max-sm:h-[300px]  w-full"
+            />
+          </div>
           {/*  */}
           <p className="text-white text-lg font-semibold mt-5">
             {" "}
@@ -143,10 +150,7 @@ function App() {
         <div className="main_container px-5 flex   justify-center gap-3 mt-5 flex-wrap mb-20">
           {/*  */}{" "}
           <div className="flex gap-5 items-center  justify-center">
-            <p className="text-white  text-2xl  font-bold">
-              {" "}
-              Time left
-            </p>
+            <p className="text-white  text-2xl  font-bold"> Time left</p>
             <h2 className="text-yellow-400 my-5 text-3xl ">
               {formatTime(timeLeft)}
             </h2>
@@ -156,10 +160,9 @@ function App() {
           </button>
         </div>
         {/*  */}
-       
+
         {/*  */}
         {/*  */}
-     
       </div>
     </div>
   );

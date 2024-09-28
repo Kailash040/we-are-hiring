@@ -1,5 +1,7 @@
 import "./App.css";
 import Banner from "../src/assets/banner.jpg";
+import banner2 from "../src/assets/img2.jpg";
+import banner3 from "../src/assets/img3.jpg";
 //
 import React, { useState, useEffect } from "react";
 function App() {
@@ -30,7 +32,21 @@ function App() {
   };
   //
   return (
-    <div>
+    <div className="relative">
+      <div className=" fixed bottom-0 mx-auto w-full bg-[#FFF7E1]">
+        <div className="main_container px-5 flex   justify-between flex-wrap gap-3 mt-5 mb-5 ">
+          {/*  */}{" "}
+          <div className="flex items-start  justify-center flex-col">
+            <p className="text-yellow-400  text-4xl font-serif font-bold"> ₹99</p>
+            <h2 className="text-red-400 text-3xl font-serif ">
+              offers End in 15 Mins
+            </h2>
+          </div>
+          <button className="bg-yellow-500 px-8 py-4 rounded-xl font-extrabold text-center ">
+           Register Now
+          </button>
+        </div>
+      </div>
       <div className="main_container px-5 flex justify-center flex-col">
         <div className="flex mt-5 justify-center items-center mb-10">
           {/* <h2 className="text-yellow-400">{formatTime(timeLeft)}</h2> */}
@@ -42,44 +58,55 @@ function App() {
             />
           </div>
         </div>
+        {/*  */}
+        <p className="text-white font-serif font-bold text-center mt-2 text-xl	">
+          A Govt. Approved work where you can Earn upto <b>30k</b> Per Month
+          through Social Media (Facebook, Instagram, Whatsapp, linkedin)
+        </p>
+        {/*  */}
         <h1 className="text-white font-serif text-center mt-2 text-3xl	">
           Work From Home
         </h1>
         <p className="text-white font-serif font-bold text-center mt-2 text-2xl	">
           [Part Time & Full Time]
           <div className="main_container px-5 flex  mt-5 flex-col  justify-center">
-            <p>
-              Today's Investment is{" "}
-              <span className="text-yellow-600">Only ₹99</span> but Price will{" "}
-              <span className="text-yellow-600">Increase to ₹999</span> when
-              Timer Hits Zero
-            </p>
             <div className="flex gap-5 items-center  justify-center">
-             <p>Time Left:-</p>
-            <h2 className="text-yellow-400 my-5 text-3xl ">
-              {formatTime(timeLeft)}
-            </h2>
+              <p> Ten Vacancy left:-</p>
+              <h2 className="text-yellow-400 my-5 text-3xl ">
+                {formatTime(timeLeft)}
+              </h2>
             </div>
 
-            <button className="bg-yellow-500 px-10 py-4 rounded-xl font-extrabold text-center w-2/3  mx-auto">
+            <button className="bg-yellow-500 px-10 py-4 rounded-xl font-extrabold text-center   mx-auto w-[225px]">
               Apply Now
             </button>
           </div>
         </p>
-        <p className="text-white font-serif font-bold text-center mt-2 text-xl	">
-          A Govt. Approved work where you can Earn upto <b>30k</b> Per Month
-          through Social Media (Facebook, Instagram, Whatsapp, linkedin)
-        </p>
+
         {/*  */}
         {/*  */}
 
         {/*  */}
-        <div className="main_container px-5 flex   justify-between gap-3">
-          <button className="bg-yellow-500 px-10 py-4 rounded-xl font-extrabold text-center ">
-            Apply Now
-          </button>
-          {/*  */}
-          <button className="bg-yellow-500 px-10 py-4 rounded-xl font-extrabold text-center ">
+
+        <div className="mt-10">
+          <img
+            src={banner2}
+            alt="banner2"
+            className=" h-screen border-4 max-sm:h-[300px]  w-full"
+          />
+        </div>
+        <div className="main_container px-5 flex   justify-center gap-3 mt-5 flex-wrap">
+          {/*  */}{" "}
+          <div className="flex gap-5 items-center  justify-center">
+            <p className="text-white  text-2xl font-serif font-bold">
+              {" "}
+              Ten Vacancy left:-
+            </p>
+            <h2 className="text-yellow-400 my-5 text-3xl font-serif ">
+              {formatTime(timeLeft)}
+            </h2>
+          </div>
+          <button className="bg-yellow-500 px-8 py-4 rounded-xl font-extrabold text-center ">
             Apply Now
           </button>
         </div>
@@ -105,6 +132,31 @@ function App() {
             relationships with customers like never before.
           </p>
         </div>
+        {/*  */}
+        <div className="w-[900px] mx-auto max-sm:w-full">
+          <img
+            src={banner3}
+            alt="banner3"
+            className="  max-sm:h-[300px]  w-full  h-[500px]"
+          />
+        </div>
+        {/*  */}
+        <div className="main_container px-5 flex   justify-center gap-3 mt-5 flex-wrap mb-[150px]">
+          {/*  */}{" "}
+          <div className="flex gap-5 items-center  justify-center">
+            <p className="text-white  text-2xl font-serif font-bold">
+              {" "}
+              Ten Vacancy left:-
+            </p>
+            <h2 className="text-yellow-400 my-5 text-3xl font-serif ">
+              {formatTime(timeLeft)}
+            </h2>
+          </div>
+          <button className="bg-yellow-500 px-8 py-4 rounded-xl font-extrabold text-center ">
+            Apply Now
+          </button>
+        </div>
+        {/*  */}
       </div>
     </div>
   );

@@ -77,8 +77,8 @@ function App() {
         <p className="text-white  font-bold text-center mt-2 text-2xl	">
           [Part Time & Full Time]
           <p className="mt-3 text-2xl max-sm:text-base"> Today's Investment is Only <span className="text-yellow-400">₹99</span>  but Price will Increase to  <span className="text-yellow-400">₹999</span>  when Timer Hits Zero</p>
-          <div className="main_container px-5 flex  mt-5 flex-col  justify-center">
-            <div className="flex gap-5 items-center  justify-center">
+          <div className="main_container px-5 flex  flex-col  justify-center">
+            <div className="flex gap-2 items-center  justify-center">
               <p> Time left</p>
               <h2 className="text-yellow-400 my-5 text-3xl ">
                 {formatTime(timeLeft)}
@@ -97,7 +97,7 @@ function App() {
         {/*  */}
 
         <div className="mt-10">
-        <div className="w-[900px] mx-auto max-sm:w-full mb-20">
+        <div className="w-[900px] mx-auto max-sm:w-full ">
           <img
             src={banner3}
             alt="banner3"

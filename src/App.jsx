@@ -71,12 +71,12 @@ function App() {
           Social Media (Facebook, Instagram, Whatsapp, linkedin)
         </p>
         {/*  */}
-        <h1 className="text-white font-serif text-center mt-2 text-3xl	">
+        <h1 className="text-white  text-center mt-2 text-3xl	">
           Work From Home
         </h1>
-        <p className="text-white font-serif font-bold text-center mt-2 text-2xl	">
+        <p className="text-white  font-bold text-center mt-2 text-2xl	">
           [Part Time & Full Time]
-          <p className="mt-3 text-base"> Today's Investment is Only <span className="text-yellow-400">₹99</span>  but Price will Increase to  <span className="text-yellow-400">₹999</span>  when Timer Hits Zero</p>
+          <p className="mt-3 text-2xl max-sm:text-base"> Today's Investment is Only <span className="text-yellow-400">₹99</span>  but Price will Increase to  <span className="text-yellow-400">₹999</span>  when Timer Hits Zero</p>
           <div className="main_container px-5 flex  mt-5 flex-col  justify-center">
             <div className="flex gap-5 items-center  justify-center">
               <p> Time left</p>
@@ -143,11 +143,11 @@ function App() {
         <div className="main_container px-5 flex   justify-center gap-3 mt-5 flex-wrap mb-20">
           {/*  */}{" "}
           <div className="flex gap-5 items-center  justify-center">
-            <p className="text-white  text-2xl font-serif font-bold">
+            <p className="text-white  text-2xl  font-bold">
               {" "}
               Time left
             </p>
-            <h2 className="text-yellow-400 my-5 text-3xl font-serif ">
+            <h2 className="text-yellow-400 my-5 text-3xl ">
               {formatTime(timeLeft)}
             </h2>
           </div>

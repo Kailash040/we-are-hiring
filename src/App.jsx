@@ -37,13 +37,16 @@ function App() {
         <div className="main_container px-5 flex   justify-between flex-wrap gap-3 mt-5 mb-5 ">
           {/*  */}{" "}
           <div className="flex items-start  justify-center flex-col">
-            <p className="text-yellow-400  text-4xl font-serif font-bold"> ₹99</p>
-            <h2 className="text-red-400 text-3xl font-serif ">
+            <p className="text-yellow-400  text-2xl font-serif font-bold ">
+              {" "}
+              ₹99 <span className="line-through	text-black"> ₹999</span>
+            </p>
+            <h2 className="text-red-400  font-serif text-base ">
               offers End in 15 Mins
             </h2>
           </div>
-          <button className="bg-yellow-500 px-8 py-4 rounded-xl font-extrabold text-center ">
-           Register Now
+          <button className="bg-yellow-500 px-8 py-1 rounded-xl font-extrabold text-center ">
+            Register Now
           </button>
         </div>
       </div>
@@ -63,6 +66,10 @@ function App() {
           A Govt. Approved work where you can Earn upto <b>30k</b> Per Month
           through Social Media (Facebook, Instagram, Whatsapp, linkedin)
         </p>
+        <p>
+          A Govt. Approved work where you can Earn upto 30k Per Month through
+          Social Media (Facebook, Instagram, Whatsapp, linkedin)
+        </p>
         {/*  */}
         <h1 className="text-white font-serif text-center mt-2 text-3xl	">
           Work From Home
@@ -71,7 +78,7 @@ function App() {
           [Part Time & Full Time]
           <div className="main_container px-5 flex  mt-5 flex-col  justify-center">
             <div className="flex gap-5 items-center  justify-center">
-              <p> Ten Vacancy left:-</p>
+              <p> Time left</p>
               <h2 className="text-yellow-400 my-5 text-3xl ">
                 {formatTime(timeLeft)}
               </h2>
@@ -97,24 +104,15 @@ function App() {
         </div>
         <div className="main_container px-5 flex   justify-center gap-3 mt-5 flex-wrap">
           {/*  */}{" "}
-          <div className="flex gap-5 items-center  justify-center">
-            <p className="text-white  text-2xl font-serif font-bold">
-              {" "}
-              Ten Vacancy left:-
-            </p>
-            <h2 className="text-yellow-400 my-5 text-3xl font-serif ">
-              {formatTime(timeLeft)}
-            </h2>
-          </div>
-          <button className="bg-yellow-500 px-8 py-4 rounded-xl font-extrabold text-center ">
-            Apply Now
-          </button>
         </div>
         <div className="main_text mt-5 mb-10">
           <p className="text-white text-xl font-light">
             Here are the benefits of working from home specifically for students
             and housewife's, along with tips for finding employment
             opportunities:
+          </p>
+          <p className=" text-2xl font-semibold mt-5 text-yellow-400">
+            The Power of Online Business For Social Media Platforms :-
           </p>
           <p className="text-white text-lg font-semibold mt-5">
             {" "}
@@ -133,20 +131,12 @@ function App() {
           </p>
         </div>
         {/*  */}
-        <div className="w-[900px] mx-auto max-sm:w-full">
-          <img
-            src={banner3}
-            alt="banner3"
-            className="  max-sm:h-[300px]  w-full  h-[500px]"
-          />
-        </div>
-        {/*  */}
-        <div className="main_container px-5 flex   justify-center gap-3 mt-5 flex-wrap mb-[150px]">
+        <div className="main_container px-5 flex   justify-center gap-3 mt-5 flex-wrap mb-10">
           {/*  */}{" "}
           <div className="flex gap-5 items-center  justify-center">
             <p className="text-white  text-2xl font-serif font-bold">
               {" "}
-              Ten Vacancy left:-
+              Time left
             </p>
             <h2 className="text-yellow-400 my-5 text-3xl font-serif ">
               {formatTime(timeLeft)}
@@ -156,6 +146,15 @@ function App() {
             Apply Now
           </button>
         </div>
+        {/*  */}
+        <div className="w-[900px] mx-auto max-sm:w-full mb-20">
+          <img
+            src={banner3}
+            alt="banner3"
+            className="  max-sm:h-[300px]  w-full  h-[500px]"
+          />
+        </div>
+        {/*  */}
         {/*  */}
       </div>
     </div>

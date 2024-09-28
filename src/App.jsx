@@ -130,7 +130,7 @@ function App() {
             />
           </div>
           {/*  */}
-          <p className="text-white text-lg font-semibold mt-5">
+          <p className="text-white text-lg font-semibold mt-5 text-center">
             {" "}
             The power of online business through social media platforms is
             transformative. These platforms offer unparalleled reach, allowing

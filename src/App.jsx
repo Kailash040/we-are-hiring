@@ -74,7 +74,7 @@ function App() {
         {/*  */}
 
         {/*  */}
-        <div className="main_container px-5 flex   justify-between">
+        <div className="main_container px-5 flex   justify-between gap-3">
           <button className="bg-yellow-500 px-10 py-4 rounded-xl font-extrabold text-center ">
             Apply Now
           </button>

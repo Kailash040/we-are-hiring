@@ -3,7 +3,12 @@ import Banner from "../src/assets/banner.jpg";
 import banner2 from "../src/assets/img2.jpg";
 import banner3 from "../src/assets/img3.jpg";
 //
-import React, { useState, useEffect } from "react";
+import s1 from "../src/assets/s1.png";
+import s2 from "../src/assets/s2.png";
+import s3 from "../src/assets/s3.png";
+import s4 from "../src/assets/s4.png";
+
+import { useState, useEffect } from "react";
 function App() {
   //
   const SIX_HOURS_IN_SECONDS = 6 * 60 * 60;
@@ -50,7 +55,7 @@ function App() {
           </button>
         </div>
       </div>
-      <div className="main_container px-5 flex justify-center flex-col">
+      <div className="main_container  flex justify-center flex-col">
         <div className="flex mt-5 justify-center items-center mb-10">
           {/* <h2 className="text-yellow-400">{formatTime(timeLeft)}</h2> */}
           <div>
@@ -117,7 +122,7 @@ function App() {
         <div className="main_container px-5 flex   justify-center gap-3 mt-5 flex-wrap">
           {/*  */}{" "}
         </div>
-        <div className="main_text mt-5 mb-10">
+        <div className="main_text mt-5 mb-10 hidden">
           <p className=" text-2xl font-semibold mt-5 text-yellow-400">
             The Power of Online Business For Social Media Platforms :-
           </p>
@@ -146,11 +151,94 @@ function App() {
             relationships with customers like never before.
           </p>
         </div>
-        {/*  */}
+        <div className="main_container flex flex-col justify-center bg-white py-10">
+          {/*  */}
+          <p className=" text-center text-3xl font-bold ">
+            What will You Learn
+          </p>
+          <div className="card_container flex gap-5 justify-center flex-wrap mt-10">
+            <div className="card_item flex items-center gap-2  bg-[#FAEBD7] p-3 rounded-xl">
+              <div className="w-[150px] h-[150px]">
+                {" "}
+                <img src={s1} alt="s1"  className="w-full h-full"/>
+              </div>
+              <div>
+                <p className="text-2xl font-bold max-sm:text-lg">Strategic Planning
+                </p>
+                <p className="max-sm:text-sm">
+                Learn how to develop actionable strategies to <br /> achieve your business goals, including setting <br /> objectives and prioritizing tasks effectively.
+
+
+
+
+                </p>
+              </div>
+            </div>
+            {/*  */}
+            <div className="card_item flex items-center gap-5  bg-[#FAEBD7] p-3 rounded-xl">
+              <div className="w-[150px] h-[150px]">
+                {" "}
+                <img src={s2} alt="s1" className="w-full h-full" />
+              </div>
+              <div>
+                <p className="text-2xl font-bold max-sm:text-lg">Expansion Strategies
+
+                </p>
+                <p className="max-sm:text-sm">
+                Discover scalable growth strategies to expand <br /> your business operations sustainably, including <br /> leveraging technology & strategic partnerships.
+
+
+                </p>
+              </div>
+            </div>
+            {/*  */}
+            <div className="card_item flex items-center gap-5  bg-[#FAEBD7] p-3 rounded-xl">
+              <div className="w-[150px] h-[150px]">
+                {" "}
+                <img src={s3} alt="s3" className="w-full h-full" />
+              </div>
+              <div>
+                <p className="text-2xl font-bold max-sm:text-lg">Financial Management
+
+
+                </p>
+                <p className="max-sm:text-sm">
+                Gain insights into managing your finances <br /> efficiently, from budgeting and forecasting to <br /> optimizing cash flow and maximizing <br /> profitability.
+
+
+
+
+                </p>
+              </div>
+            </div>
+            {/*  */}
+            <div className="card_item flex items-center gap-5  bg-[#FAEBD7] p-3 rounded-xl">
+              <div className="w-[150px] h-[150px]">
+                {" "}
+                <img src={s3} alt="s3" className="w-full h-full" />
+              </div>
+              <div>
+                <p className="text-2xl font-bold max-sm:text-lg">Leadership Development
+
+
+
+
+                </p>
+                <p className="text-sm:text-sm" >
+                Cultivate essential leadership skills to inspire <br /> and motivate your team, foster innovation, and <br /> drive business growth with confidence and <br /> resilience.
+
+
+
+
+
+
+                </p>
+              </div>
+            </div>
         <div className="main_container px-5 flex   justify-center gap-3 mt-5 flex-wrap mb-20">
           {/*  */}{" "}
-          <div className="flex gap-5 items-center  justify-center">
-            <p className="text-white  text-2xl  font-bold"> Time left</p>
+          <div className="flex gap-2 items-center  justify-center">
+            <p className="text-black  text-2xl  font-bold"> Time left</p>
             <h2 className="text-yellow-400 my-5 text-3xl ">
               {formatTime(timeLeft)}
             </h2>
@@ -159,6 +247,10 @@ function App() {
             Apply Now
           </button>
         </div>
+          </div>
+          {/*  */}
+        </div>
+        {/*  */}
         {/*  */}
 
         {/*  */}

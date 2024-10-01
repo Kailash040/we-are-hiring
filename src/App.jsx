@@ -10,12 +10,17 @@ import s4 from "../src/assets/s4.png";
 import { useForm } from "react-hook-form";
 import axios from "axios";
 import { useState, useEffect } from "react";
+//
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+//
 function App() {
   //
   const {
     register,
     handleSubmit,
     formState: { errors },
+    reset,
   } = useForm();
 
   const onSubmit = async (data) => {
@@ -25,7 +30,9 @@ function App() {
         data
       );
       console.log("Success:", response.data);
-      alert("'We will be contacting you soon.");
+      // alert("'We will be contacting you soon.");
+      toast.success(" Thank you for submitting, we will contact you very soon");
+      reset();
     } catch (error) {
       console.error("Error submitting form:", error);
       alert("Error submitting form!");
@@ -66,22 +73,26 @@ function App() {
   };
   return (
     <div className="relative">
+      <ToastContainer />
       {/*  */}
       {show && (
         <div className="flex justify-center">
           <div className="bg-white py-10   pt-7 fixed px-7 top-10  flex    justify-center items-center  ">
             <form
               onSubmit={handleSubmit(onSubmit)}
-              className="flex gap-2 justify-center flex-wrap"
+              className="flex flex-col gap-2 justify-center flex-wrap"
             >
               {/* Name Input */}
+              <p className="text-2xl font-bold text-center">
+                You Are just One Step Away
+              </p>
               <div>
                 <input
                   id="name"
                   type="text"
                   placeholder="Full Name"
                   {...register("fullname", { required: "Name is required" })}
-                  className="border-2 border-black p-2  rounded-2xl"
+                  className="border-2 border-black p-2  rounded-2xl w-full"
                 />
               </div>
 
@@ -101,7 +112,7 @@ function App() {
                         "Invalid phone number format. Expected format: 123-456-7890 or 1234567890",
                     },
                   })}
-                  className="border-2 border-black p-2  rounded-2xl"
+                  className="border-2 border-black p-2  rounded-2xl w-full"
                 />
               </div>
 
@@ -118,17 +129,19 @@ function App() {
                       message: "Invalid email address",
                     },
                   })}
-                  className="border-2 border-black p-2  rounded-2xl"
+                  className="border-2 border-black p-2  rounded-2xl w-full"
                 />
               </div>
 
               {/* City Select */}
               <div className="flex gap-5 items-center">
-                <label htmlFor="city">City</label>
+                <label htmlFor="city" className="font-extrabold">
+                  City
+                </label>
                 <select
                   id="city"
                   {...register("city", { required: "City is required" })}
-                  className="border-2 border-black p-2  rounded-2xl"
+                  className="border-2 border-black p-2  rounded-2xl w-full"
                 >
                   <option value="">Select a city</option>
                   <option value="mumbai">Mumbai</option>
@@ -156,9 +169,9 @@ function App() {
               {/* Submit Button */}
               <button
                 type="submit"
-                className="ml-2  bg-black text-white  px-5   rounded-md "
+                className="ml-2  bg-black text-white  px-5   rounded-md w-full py-2 font-semibold"
               >
-                Submit
+                Click Here To Register Now!!
               </button>
             </form>
             <button className="absolute top-0 right-0 pb-2" onClick={hidePopUp}>
@@ -417,7 +430,7 @@ function App() {
         </div>
         {/*  */}
         {/*  */}
-       
+
         {/*  */}
         {/*  */}
       </div>
